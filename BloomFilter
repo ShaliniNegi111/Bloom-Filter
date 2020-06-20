@@ -1,0 +1,57 @@
+							Bloom Filter
+				
+1. It is space-optimized data structure for checking whether an element is present in set or not. 
+
+2. Checking for the availability of the username. 
+
+3. Bloom Filter is probabilist data structure. Probabilist data structures are the data structure that gives probablity not the exact solution. 
+
+4. Bloom filter can tell whether a element is not present in set with 100% correct result, but does not provide with 100% surely that a element is presnt in the set. 
+
+5. There  are verous way of finding whether an elemnt is presnt in bloom filter not : 
+	
+	1. By doing linear search: 
+		Time - Complexity : O(n) ; 
+	
+	2.Binary search : 
+		if element in the set are arrainged in sorted order, then binary search can be used. 
+		
+		Time-complexity : o(log n )
+	3.Multiple Servers.
+		
+6.Size of  BloomFilter is fixed, it cannot be changed. elemnts in bloom filter cannot be deleted. We can Add as many as elemnt we wish to add in bloom filter. 
+
+7.Data Structure used for Bloom Filter : 
+		Hashmap , array , Tree , LinkedList . 
+	
+8.Bloom Filter takes very less space as compared to other data structures. 
+
+9.We need Bit array  of fixed size. some Hash Functions.
+
+10.Applications : 
+		
+		1.Google servers use BloomFilter for detecting malaciouys websites.
+		2.Its used by Medium for suggesting articles to users. 
+		3. Assigning user name .		
+		
+11.Ways for Avoiding False Positive is by making use of large no hash functions. 
+
+			When using multiple hash functions:
+			To add a new item: generate a bitmap index with each hash function, and set all of those bits to 1.
+			To check if an item is present: just check if any of the bits checked are still 0. If so, the item is definitely not present.
+			
+			
+12.Bitmap Size
+		As the number of items inserted into a bloom filter increases, so does the likelihood of a false positive. That's because over time, we'll end up setting 			most of the bits to 1, instead of 0.
+
+		The larger the bitmap, the less likely false positives are. When using a bloom filter, it's helpful to know ahead of time roughly how many elements will 			be in your set. That way you can make the bitmap large enough to avoid a high false positive rate.
+		
+13.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+1. Application of Bloom filter : 
+		
+2. Hash function used in bloom filter.
+
+3. 
